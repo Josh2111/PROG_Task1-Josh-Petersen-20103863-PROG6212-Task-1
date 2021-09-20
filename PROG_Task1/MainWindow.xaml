@@ -1,0 +1,49 @@
+﻿<Window x:Class="PROG_Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG_Task1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Module Information">
+                <Grid Background="RosyBrown">
+                    <Label Content="Module Code:" HorizontalAlignment="Left" Margin="58,82,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Module Credits:" HorizontalAlignment="Left" Margin="58,148,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Class hours per week:" HorizontalAlignment="Left" Margin="58,209,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Semester Start Date:" HorizontalAlignment="Left" Margin="61,249,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Module Name:" HorizontalAlignment="Left" Margin="58,113,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Self-study hours:" HorizontalAlignment="Left" Margin="58,179,0,0" VerticalAlignment="Top" />
+                    <ListBox x:Name="lstView" Margin="397,10,10,10"/>
+                    <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="70,361,0,0" VerticalAlignment="Top" Width="47" Click="btnClear_Click"/>
+                    <Button x:Name="btnEnter" Content="Enter" HorizontalAlignment="Left" Margin="168,361,0,0" VerticalAlignment="Top" Width="46" Click="btnEnter_Click"/>
+                    <TextBox x:Name="txtModCode" HorizontalAlignment="Left" Margin="191,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+                    <TextBox x:Name="txtModName" HorizontalAlignment="Left" Margin="191,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+                    <TextBox x:Name="txtModCredits" HorizontalAlignment="Left" Margin="191,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+                    <TextBox x:Name="txtClassHours" HorizontalAlignment="Left" Margin="191,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+                    <TextBox x:Name="txtStartDate" HorizontalAlignment="Left" Margin="191,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+                    <TextBox x:Name="txtSelfStudyHours" HorizontalAlignment="Left" Margin="191,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173"/>
+                    <Button x:Name="btnView" Content="View" HorizontalAlignment="Left" Margin="276,361,0,0" VerticalAlignment="Top" Width="56" Click="btnView_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Self Study Information" HorizontalAlignment="Left" Height="20" VerticalAlignment="Center" Width="135">
+                <Grid Background="RosyBrown">
+                    <Label Content="Module Date:" HorizontalAlignment="Left" Margin="37,55,0,0" VerticalAlignment="Top" Height="33" Width="112"/>
+                    <Label Content="Semester Weeks:" HorizontalAlignment="Left" Margin="38,125,0,0" VerticalAlignment="Top" Height="33" Width="136"/>
+                    <Label Content="Module Name:" HorizontalAlignment="Left" Margin="37,88,0,0" VerticalAlignment="Top" Height="33" Width="135"/>
+                    <TextBox x:Name="txtModDate" HorizontalAlignment="Left" Margin="163,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="23"/>
+                    <TextBox x:Name="txtWeeks" HorizontalAlignment="Left" Margin="164,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="23"/>
+                    <Button x:Name="btnClearSelf" Content="Clear" HorizontalAlignment="Left" Margin="38,253,0,0" VerticalAlignment="Top" Width="67" Click="btnClearSelf_Click" Height="26"/>
+                    <Button x:Name="btnEnterSelf" Content="Enter" HorizontalAlignment="Left" Margin="163,253,0,0" VerticalAlignment="Top" Width="74" Click="btnEnterSelf_Click" Height="26"/>
+                    <Button x:Name="btnViewSelf" Content="View" HorizontalAlignment="Left" Margin="290,253,0,0" VerticalAlignment="Top" Width="68" Click="btnViewSelf_Click" Height="26"/>
+                    <TextBox x:Name="txtModNameSelf" HorizontalAlignment="Left" Margin="164,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="23"/>
+                    <ListBox x:Name="lstViewSelf" Margin="397,10,10,10"/>
+                    <Label Content="Module Hours:" HorizontalAlignment="Left" Margin="37,163,0,0" VerticalAlignment="Top" Height="33" Width="136"/>
+                    <TextBox x:Name="txtModuleHours" HorizontalAlignment="Left" Margin="163,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="23"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
